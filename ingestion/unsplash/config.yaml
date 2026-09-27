@@ -1,0 +1,20 @@
+# Unsplash crawler configuration
+
+search:
+  query: technology
+  order_by: latest       # latest | relevant
+  today_only: true
+  max_results: 20
+  per_page: 30
+  orientation: null      # landscape | portrait | squarish | null
+  color: null            # black_and_white | blue | ... | null
+
+download:
+  image_quality: regular  # raw | full | regular | small | thumb
+
+api:
+  base_url: "https://api.unsplash.com"
+  request_delay: 1.0
+  max_retries: 6
+  retry_backoff: 15.0
+  download_timeout: 60

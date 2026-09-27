@@ -1,0 +1,30 @@
+# Secrets
+.env
+**/.env
+
+# Crawled / generated outputs
+**/downloads/
+**/logs/
+crawl_arxiv/data/
+crawl_data_dlp/data/
+/data/
+
+# Experimental crawler (local only)
+/crawl_data_dlp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Partial / temp downloads
+*.part
+*.tmp
+
+# Data lake — raw and processed outputs (large binary/media files)
+data-lake/_state
+data-lake/bronze/
+data-lake/silver/
+data-lake/gold/
+# _state/ is intentionally tracked — it's the ingestion checkpoint
+logs/

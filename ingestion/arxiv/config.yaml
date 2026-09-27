@@ -1,0 +1,16 @@
+# arXiv crawler configuration
+# Reference: https://arxiv.org/category_taxonomy
+
+categories:
+  - cs.LG   # Machine Learning
+  - cs.CV   # Computer Vision
+
+max_results_per_category: 50
+days_back: 1
+
+api:
+  base_url: "https://export.arxiv.org/api/query"
+  request_delay: 5
+  timeout: 60
+  max_retries: 6
+  retry_backoff: 15

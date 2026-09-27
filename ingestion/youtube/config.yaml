@@ -1,0 +1,27 @@
+# YouTube crawler configuration
+
+search:
+  query: "AI Research Papers"
+  relevance_language: en
+  require_english: true
+  days_back: 1
+  max_results: 3
+  min_duration_seconds: 120
+  max_duration_seconds: 720
+  exclude_shorts: true
+  search_timeout_seconds: 3600
+
+download:
+  video_format: "bestvideo[ext=mp4]/bestvideo/best[ext=mp4]/best"
+  audio_format: "bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio/best"
+  write_info_json: true
+  subtitles:
+    enabled: true
+    languages: ["en"]
+    write_auto_subs: true
+    formats: "vtt/srt"
+
+api:
+  request_delay: 1.0
+  max_retries: 6
+  retry_backoff: 15.0
